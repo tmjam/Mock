@@ -5,6 +5,26 @@ body{
   font-family: 'Open Sans Condensed', sans-serif;
   font-stretch: condensed;
 }
+#right-menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -2.5em;
+  border: 2px solid #ccc;
+  border-right: 0;
+  list-style: none;
+  padding: 10px;
+}
+#right-menu li a{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background-color: #ccc;
+}
+#right-menu li a:hover{
+  background-color: #aaa;
+}
 nav {
   position: fixed;
   top: 0;
