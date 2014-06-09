@@ -14,17 +14,29 @@
 		        //$("#flyout").css("display","none");
 		    });
 		});  
+		$('.page-nav li a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		});
 	});
 	</script>
 </head>
 <body>
 	<nav>
 	  	<h1>FOUNDATIONS OF DATA USE</h1>
-		<ul id="flat-menu">
-		  <li>OVERVIEW</li>
-		  <li>LESSON 1</li>
-		  <li>LESSON 2</li>
-		  <li>LESSON 3</li>
+		<ul class="page-nav" id="flat-menu">
+		  <li><a href="#page1">OVERVIEW</a></li>
+		  <li><a href="#page2">LESSON 1</a></li>
+		  <li><a href="#page3">LESSON 2</a></li>
+		  <li><a href="#page4">LESSON 3</a></li>
 		</ul>  
 		  <a href="#" title="Main Navigation" id="navigation">
 		    <span></span>
@@ -38,13 +50,15 @@
 		  <li><span class="glyphicon glyphicon-file"></span>Glossary</li>
 		</ul>  
 	</nav>
-	<ul id="right-menu">
+	<ul class="page-nav" id="right-menu">
 		<li> <i class="glyphicon glyphicon-chevron-up"></i> </li>
-		<li><a href="#L384"></a></li>
-		<li><a href="#details"></a></li>
-		<li><a href="#FAQ"></a></li>
+		<li><a href="#page1"></a></li>
+		<li><a href="#page2"></a></li>
+		<li><a href="#page3"></a></li>
 		<li> <i class="glyphicon glyphicon-chevron-down"></i> </li>
 	</ul>
+
+	<!--  PAGES	-->
 	<div class="page" id="page1"></div>
 	<div class="page" id="page2"></div>
 </body>
