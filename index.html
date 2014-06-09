@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Home</title>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript">
+	$(function(){
+		$('#page1').load('click.html');
+		$('#page2').load('photo_text.html');
+		$("#navigation").on('click', function(){
+		    $("#flyout").toggle(function () {
+		        $("#flyout").css("display","inline");
+		    }, function () {
+		        //$("#flyout").css("display","none");
+		    });
+		});  
+	});
+	</script>
+</head>
+<body>
+	<nav>
+	  	<h1>FOUNDATIONS OF DATA USE</h1>
+		<ul id="flat-menu">
+		  <li>OVERVIEW</li>
+		  <li>LESSON 1</li>
+		  <li>LESSON 2</li>
+		  <li>LESSON 3</li>
+		</ul>  
+		  <a href="#" title="Main Navigation" id="navigation">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </a>
+		<ul id="flyout">
+		  <li><span class="glyphicon glyphicon-user"></span>Profile</li>
+		  <li><span class="glyphicon glyphicon-cog"></span>Settings</li>
+		  <li><span class="glyphicon glyphicon-map-marker"></span>Learning Map</li>
+		  <li><span class="glyphicon glyphicon-file"></span>Glossary</li>
+		</ul>  
+	</nav>
+	<div class="page" id="page1"></div>
+	<div class="page" id="page2"></div>
+</body>
+</html>

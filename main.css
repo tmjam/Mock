@@ -1,0 +1,87 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-stretch: condensed;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.6em;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+  box-shadow: 0 0 0 1em rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav ul#flat-menu {
+  list-style: none;
+  display: inline;
+  right: 200px;
+  top: 14px;
+  padding-bottom: 10px;
+}
+nav ul#flat-menu li{
+  display: inline;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+nav ul#flat-menu li:first-child:hover{
+  background-color: #66cccc;
+  cursor: pointer;
+}
+nav ul#flat-menu li:hover{
+  background-color: #ff6666;
+  cursor: pointer;
+  color: black;
+}
+.content {
+  margin-top: 4em;
+  padding: 1.5em;
+}
+#navigation span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #fff;
+  display: block;
+}
+#navigation{
+  position: absolute;
+  right: 55px;
+  top:10px;
+}
+#navigation:hover{
+}
+#flyout{
+  display:none;
+  position:absolute;
+  color: black;
+  right: 60px;
+  top: 45px;
+}
+#flyout li span{
+  margin-right: 4px;
+}
+#flyout li{
+  padding: 10px;
+  background-color: #eee;  
+  border: 1px solid;    
+  width: 200px;
+}
+#flyout li:hover{
+  cursor: pointer;
+  background: #aaa;
+}
+h1 {
+  font-size: 18px;  
+  display: inline;
+}
+p {
+  font-size: 1.5em;
+  margin: 2em 0;
+}
