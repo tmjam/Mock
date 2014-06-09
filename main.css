@@ -83,6 +83,7 @@ nav ul#flat-menu li:hover{
   color: black;
   right: 60px;
   top: 45px;
+  list-style: none;
 }
 #flyout li span{
   margin-right: 4px;
