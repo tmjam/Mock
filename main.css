@@ -8,9 +8,9 @@ body{
 #right-menu {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 20%;
   margin-top: -2.5em;
-  border: 2px solid #ccc;
+  border: 2px solid #222;
   border-right: 0;
   list-style: none;
   padding: 10px;
@@ -24,6 +24,15 @@ body{
 }
 #right-menu li a:hover{
   background-color: #aaa;
+}
+.sub-header{
+  text-align: center;
+  margin-top: 40px;
+  background-color: wheat;
+  padding: 10px 0px 1px 0px;
+}
+.fixed{
+  position: fixed;
 }
 nav {
   position: fixed;
@@ -48,6 +57,10 @@ nav ul#flat-menu li{
   display: inline;
   padding: 10px 20px;
   font-size: 12px;
+}
+nav ul#flat-menu li a, h1 a{
+  color: #fff;
+  text-decoration: none;
 }
 nav ul#flat-menu li:first-child:hover{
   background-color: #66cccc;
