@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Home</title>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript">
+	$(function(){
+		$('#page1').load('all_parts/overview_page_02/overview_new.html');
+		
+		$("#navigation").on('click', function(){
+		    $("#flyout").toggle(function () {
+		        $("#flyout").css("display","inline");
+		    }, function () {
+		        //$("#flyout").css("display","none");
+		    });
+		});  
+	});
+	</script>
+</head>
+<body>
+	<nav>
+	  	<h1><a href="index.html">FOUNDATIONS OF DATA USE</a></h1>
+		<ul id="flat-menu">
+		  <li style="background-color: #66cccc;"><a id ="overview" href="#">OVERVIEW</a></li>
+		  <li><a href="#">LESSON 1</a></li>
+		  <li><a href="#">LESSON 2</a></li>
+		  <li><a href="#">LESSON 3</a></li>
+		</ul>  
+		  <a href="#" title="Main Navigation" id="navigation">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </a>
+		<ul id="flyout">
+		  <li><span class="glyphicon glyphicon-user"></span>Profile</li>
+		  <li><span class="glyphicon glyphicon-cog"></span>Settings</li>
+		  <li><span class="glyphicon glyphicon-map-marker"></span>Learning Map</li>
+		  <li><span class="glyphicon glyphicon-file"></span>Glossary</li>
+		</ul> 
+	</nav>
+	<!--  PAGES	-->
+	<div class="page" id="page1"></div>
+</body>
+</html>
